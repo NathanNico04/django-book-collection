@@ -104,7 +104,7 @@ lors de la création d'un élément.
 - **On dé-commente `path("admin/", admin.site.urls),` dans le fichier `cc/urls.py`**
 - `python manage.py createsuperuser` : _Crée un super utilisateur._
   - **username :** `cc2`
-  - **email :** `maximilien.goujon@etu.univ-orleans.fr`
+  - **email :** `nathan.nicolessi@etu.univ-orleans.fr`
   - **password :** `Framework1234`
 - **Ajout de `admin.site.register(Collec)` dans le fichier `admin.py`**
 
