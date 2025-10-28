@@ -1,0 +1,53 @@
+{% extends "collec_management/navbar.html" %}
+{% load django_bootstrap5 %}
+
+{% block title %}
+<div class="d-flex m-4 justify-content-center shadow p-3 bg-light rounded">
+  <p class="fw-bold">Collections Management</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="card-group p-4">
+  <div class="card mx-2 border shadow rounded">
+    <span class="material-icons me-2 p-1">list_alt</span>
+    <div class="card-body">
+      <h5 class="d-flex card-title fw-bold justify-content-center p-1">Liste</h5>
+      <p class="card-text p-2">Le lien <b class="text-decoration-underline">Liste</b> de la navbar permet d'aller consulter la liste de toutes les collections de la base de données</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">/all</small>
+    </div>
+  </div>
+  <div class="card mx-2 border shadow rounded">
+    <span class="material-icons me-2 p-1">add</span>
+    <div class="card-body">
+      <h5 class="d-flex card-title fw-bold justify-content-center p-1">Ajouter</h5>
+      <p class="card-text p-2">Le lien <b class="text-decoration-underline">Ajouter Une Collection</b> de la navbar permet d'acceder au formulaire pour ajouter une collection</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">/new</small>
+    </div>
+  </div>
+  <div class="card mx-2 border shadow rounded">
+    <span class="material-icons me-2 p-1">info</span>
+    <div class="card-body">
+      <h5 class="d-flex card-title fw-bold justify-content-center p-1">À Propos</h5>
+      <p class="card-text p-2">Le lien <b class="text-decoration-underline">À propos</b> de la navbar permet d'acceder à une page montrant les crédits du site</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">/about</small>
+    </div>
+  </div>
+  <div class="card mx-2 border shadow rounded">
+    <span class="material-icons me-2 p-1">account_circle</span>
+    <div class="card-body">
+      <h5 class="d-flex card-title fw-bold justify-content-center p-1">Login/Logout</h5>
+      <p class="card-text p-2">Le lien <b class="text-decoration-underline">Login</b> de la navbar permet de se connecter ou de se déconnecter</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">/login</small>
+    </div>
+  </div>
+</div>
+{% endblock %}

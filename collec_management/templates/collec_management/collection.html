@@ -1,0 +1,46 @@
+{% extends "collec_management/navbar.html" %}
+{% load django_bootstrap5 %}
+
+{% block title %}
+<div class="d-flex p-2 justify-content-center shadow p-3 bg-light rounded">
+  <h2 class="fw-bold">Détails de la collection</h2>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-center p-4">
+  <div class="card shadow-lg w-75">
+    <div class="card-body">
+      <h3 class="d-flex card-title align-items-center justify-content-center"><b>{{ collection.title }}</b></h3>
+      <h5 class="d-flex card-text align-items-center justify-content-center pb-2">{{ collection.description }}</h5>
+      <table class="table table-bordered">
+          <thead>
+              <tr>
+                  <th>Nom</th>
+                  <th>Description</th>
+                  <th>Actions</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% for element in elements %}
+              <tr>
+                  <td>{{ element.title }}</td>
+                  <td>{{ element.description }}</td>
+                  <td class="d-flex justify-content-around">
+                      <a href="{% url 'element' element.id %}" class="btn btn-info btn-sm text-white shadow">Voir Détails</a>
+                      <a href="{% url 'edit_element' element.id %}" class="btn btn-primary btn-sm shadow">Modifier</a>
+                      <a href="{% url 'delete_element' element.id %}" class="btn btn-danger btn-sm shadow">Supprimer</a>
+                  </td>
+              </tr>
+              {% endfor %}
+          </tbody>
+      </table>
+      <p class="card-text">
+        <small class="text-muted">Date : {{ collection.date }}</small>
+      </p>
+      <a href={% url "new_element" %} class="btn btn-dark shadow">Ajouter un élément</a>
+      <a href={% url "all_collections" %} class="btn bg-secondary btn-md text-white shadow">Retour</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

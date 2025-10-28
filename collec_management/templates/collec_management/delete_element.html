@@ -1,0 +1,29 @@
+{% extends "collec_management/navbar.html" %}
+{% load django_bootstrap5 %}
+
+{% block title %}
+<div class="d-flex p-2 justify-content-center shadow p-3 bg-light rounded">
+  <h2 class="fw-bold">Supprimer l'élément <b class="text-decoration-underline">{{ element.title }}</b> ?</h2>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-center p-4">
+  <div class="card shadow-lg w-75">
+    <div class="card-body">
+      <h5 class="card-title">{{ element.title }}</h5>
+      <ul class="list-unstyled">
+        <li><b>Description : </b>{{ element.description }}</li>
+        <li><b>Date de publication : </b>{{ element.date }}</li>
+        <li><b>Valeur : </b>{{ element.value }}</li>
+        <li><b>Quantité : </b>{{ element.quantity }}</li>
+      </ul>
+      <form method="post" class="mt-3">
+        {% csrf_token %}
+        {% bootstrap_button button_type="submit" content="Supprimer" button_class="btn-dark" size="md" %}
+        <a href={% url "collection" element.collection.pk %} class="btn btn-secondary ms-2">Retour à la collection</a>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

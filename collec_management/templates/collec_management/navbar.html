@@ -1,0 +1,90 @@
+{# Load the tag library #}
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections Management</title>
+    <style>
+      .navbar-nav {
+        margin: 0 auto;
+      }
+      .nav-item {
+        margin: 0 10px;
+      }
+      .nav-item .btn, .nav-item .nav-link {
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      .nav-item .btn {
+        border: none;
+      }
+      .navbar .dropdown-menu-dark {
+        background-color: #343a40;
+        border: none;
+      }
+      .dropdown-item:hover {
+        background-color: #495057;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark bg-gradient border-bottom border-body shadow-sm" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span class="material-icons">
+            collections_bookmark
+            </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link btn btn-dark" aria-current="page" href={% url "index" %}>Accueil</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link btn btn-dark" href={% url "all_collections" %}>Liste</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link btn btn-dark" href={% url "new_collec" %}>Ajouter Une Collection</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link btn btn-dark" href={% url "about" %}>À Propos</a>
+            </li>
+            <ul class="navbar-nav">
+              {% if user.is_authenticated %}
+                <li class="nav-item">
+                  <form action="{% url 'logout' %}" method="post" class="d-inline">
+                    {% csrf_token %}
+                    <button class="btn btn-secondary" type="submit">Log Out</button>
+                  </form>
+                </li>
+              {% else %}
+                <li class="nav-item">
+                  <a href="{% url 'login' %}" class="btn btn-secondary" role="button">Login</a>
+                </li>
+              {% endif %}
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1>{% block title %}{% endblock %}</h1>
+    {% block content %}{% endblock %}
+  </body>
+</html>

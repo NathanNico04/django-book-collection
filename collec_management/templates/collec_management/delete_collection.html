@@ -1,0 +1,27 @@
+{% extends "collec_management/navbar.html" %}
+{% load django_bootstrap5 %}
+
+{% block title %}
+<div class="d-flex p-2 justify-content-center shadow p-3 bg-light rounded">
+  <h2 class="fw-bold">Supprimer la collection <b class="text-decoration-underline">{{ collection.title }}</b> ?</h2>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-center p-4">
+  <div class="card shadow-lg w-75">
+    <div class="card-body">
+      <h5 class="card-title">{{ collection.title }}</h5>
+      <ul class="list-unstyled">
+        <li><b>Description : </b>{{ collection.description }}</li>
+        <li><b>Date de publication : </b>{{ collection.date }}</li>
+      </ul>
+      <form method="post" class="mt-3">
+        {% csrf_token %}
+        {% bootstrap_button button_type="submit" content="Supprimer" button_class="btn-dark" size="md" %}
+        <a href="{% url 'all_collections' %}" class="btn btn-secondary ms-2">Retour aux collections</a>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

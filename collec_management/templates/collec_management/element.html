@@ -1,0 +1,26 @@
+{% extends "collec_management/navbar.html" %}
+{% load django_bootstrap5 %}
+
+{% block title %}
+<div class="d-flex p-2 justify-content-center shadow p-3 bg-light rounded">
+  <h2 class="fw-bold">Dans la collection "{{ element.collection.title }}"</h2>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-center p-4">
+  <div class="card shadow-lg w-75">
+    <div class="card-body">
+      <h5 class="d-flex card-title align-items-center justify-content-center"><b>{{ element.title }}</b></h5>
+      <p class="d-flex card-text align-items-center justify-content-center">{{ element.description }}</p>
+      <p class="d-flex card-text align-items-center justify-content-center"><b class="me-1">Valeur :</b>{{ element.value }}</p>
+      <p class="d-flex card-text align-items-center justify-content-center"><b class="me-1">Quantité :</b>{{ element.quantity }}</p>
+
+      <p class="d-flex card-text align-items-center justify-content-center">
+        <small class="text-muted">Date : {{ element.date }}</small>
+      </p>
+      <a href={% url "collection" element.collection.pk %} class="d-flex btn bg-secondary btn-md text-white align-items-center justify-content-center">Retour à la collection</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

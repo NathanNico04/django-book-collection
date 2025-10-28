@@ -1,0 +1,25 @@
+{% extends "collec_management/navbar.html" %}
+{% load django_bootstrap5 %}
+
+{% block title %}
+<div class="d-flex p-2 justify-content-center shadow p-3 bg-light rounded">
+  <h2 class="fw-bold">Mentions du site</h2>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="text-center text-decoration-underline">Auteurs du site</h2>
+  <div class="d-flex justify-content-center p-4">
+    <ul class="list-group w-50 border border-dark-subtle rounded-sm shadow">
+      <li class="list-group-item text-center fw-semibold border border-dark-subtle">Maximilien Goujon</li>
+      <li class="list-group-item text-center fw-semibold border border-dark-subtle">Nathan Nicolessi</li>
+      <li class="list-group-item text-center fw-semibold border border-dark-subtle">Lisa Blavot</li>
+      <li class="list-group-item text-center fw-semibold border border-dark-subtle">Théo Cretel</li>
+    </ul>
+  </div>
+  <footer class="mt-4 text-center">
+    <p class="fw-medium fst-italic">Application Collection Management, développée pour le CC1 et le CC2 de Framework Web, Université d’Orléans, 2024</p>
+  </footer>
+</div>
+{% endblock %}

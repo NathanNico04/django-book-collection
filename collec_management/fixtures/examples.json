@@ -1,0 +1,836 @@
+[
+  {
+    "model": "collec_management.collec",
+    "pk": 1,
+    "fields": {
+      "title": "Collection de livres anciens",
+      "description": "Une collection de livres rares et anciens, incluant des éditions limitées.",
+      "date": "2023-05-01"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 2,
+    "fields": {
+      "title": "Collection de timbres du monde",
+      "description": "Des timbres provenant de plusieurs pays et de différentes époques.",
+      "date": "2022-03-15"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 3,
+    "fields": {
+      "title": "Vinyles de jazz classique",
+      "description": "Une sélection de vinyles rares de jazz des années 1940-1960.",
+      "date": "2021-07-23"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 4,
+    "fields": {
+      "title": "Œuvres d'art modernes",
+      "description": "Une collection privée d'œuvres d'art modernes d'artistes émergents.",
+      "date": "2020-11-09"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 5,
+    "fields": {
+      "title": "Cartes postales anciennes",
+      "description": "Des cartes postales d'Europe datant des années 1900.",
+      "date": "2023-02-28"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 6,
+    "fields": {
+      "title": "Collection de monnaies anciennes",
+      "description": "Monnaies d'or et d'argent de différentes civilisations antiques.",
+      "date": "2022-12-05"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 7,
+    "fields": {
+      "title": "Photographies vintage",
+      "description": "Une série de photographies en noir et blanc des années 1930.",
+      "date": "2021-08-18"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 8,
+    "fields": {
+      "title": "Affiches de cinéma",
+      "description": "Des affiches originales de films classiques des années 50.",
+      "date": "2020-10-10"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 9,
+    "fields": {
+      "title": "Livres d’art japonais",
+      "description": "Des livres illustrés de l’art japonais traditionnel et contemporain.",
+      "date": "2023-04-04"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 10,
+    "fields": {
+      "title": "Sculptures en bois",
+      "description": "Des sculptures en bois réalisées par des artisans locaux.",
+      "date": "2021-06-01"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 11,
+    "fields": {
+      "title": "Collection de montres vintage",
+      "description": "Montres de luxe vintage des années 60 à 80.",
+      "date": "2022-01-15"
+    }
+  },
+  {
+    "model": "collec_management.collec",
+    "pk": 12,
+    "fields": {
+      "title": "Collections de coquillages",
+      "description": "Une collection de coquillages rares du monde entier.",
+      "date": "2023-09-09"
+    }
+  },
+
+
+  {
+    "model": "collec_management.element",
+    "pk": 1,
+    "fields": {
+      "title": "Livre ancien 1",
+      "description": "Un livre ancien et rare.",
+      "value": "123.45",
+      "quantity": 3,
+      "date": "2023-06-01",
+      "collection": 1
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 2,
+    "fields": {
+      "title": "Livre ancien 2",
+      "description": "Un autre livre ancien.",
+      "value": "234.56",
+      "quantity": 2,
+      "date": "2023-06-02",
+      "collection": 1
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 3,
+    "fields": {
+      "title": "Livre ancien 3",
+      "description": "Encore un livre ancien.",
+      "value": "345.67",
+      "quantity": 1,
+      "date": "2023-06-03",
+      "collection": 1
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 4,
+    "fields": {
+      "title": "Livre ancien 4",
+      "description": "Un livre ancien supplémentaire.",
+      "value": "456.78",
+      "quantity": 5,
+      "date": "2023-06-04",
+      "collection": 1
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 5,
+    "fields": {
+      "title": "Livre ancien 5",
+      "description": "Un dernier livre ancien.",
+      "value": "567.89",
+      "quantity": 4,
+      "date": "2023-06-05",
+      "collection": 1
+    }
+  },
+
+
+
+
+  {
+    "model": "collec_management.element",
+    "pk": 6,
+    "fields": {
+      "title": "Timbre rare 1",
+      "description": "Un timbre rare de 1900.",
+      "value": "45.67",
+      "quantity": 10,
+      "date": "2023-06-01",
+      "collection": 2
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 7,
+    "fields": {
+      "title": "Timbre rare 2",
+      "description": "Un autre timbre rare de 1910.",
+      "value": "56.78",
+      "quantity": 8,
+      "date": "2023-06-02",
+      "collection": 2
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 8,
+    "fields": {
+      "title": "Timbre rare 3",
+      "description": "Encore un timbre rare de 1920.",
+      "value": "67.89",
+      "quantity": 6,
+      "date": "2023-06-03",
+      "collection": 2
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 9,
+    "fields": {
+      "title": "Timbre rare 4",
+      "description": "Un timbre rare supplémentaire de 1930.",
+      "value": "78.90",
+      "quantity": 4,
+      "date": "2023-06-04",
+      "collection": 2
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 10,
+    "fields": {
+      "title": "Timbre rare 5",
+      "description": "Un dernier timbre rare de 1940.",
+      "value": "89.01",
+      "quantity": 2,
+      "date": "2023-06-05",
+      "collection": 2
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 11,
+    "fields": {
+      "title": "Vinyle de jazz 1",
+      "description": "Un vinyle rare de jazz.",
+      "value": "100.00",
+      "quantity": 1,
+      "date": "2023-06-01",
+      "collection": 3
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 12,
+    "fields": {
+      "title": "Vinyle de jazz 2",
+      "description": "Un autre vinyle rare de jazz.",
+      "value": "150.00",
+      "quantity": 2,
+      "date": "2023-06-02",
+      "collection": 3
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 13,
+    "fields": {
+      "title": "Vinyle de jazz 3",
+      "description": "Encore un vinyle rare de jazz.",
+      "value": "200.00",
+      "quantity": 3,
+      "date": "2023-06-03",
+      "collection": 3
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 14,
+    "fields": {
+      "title": "Vinyle de jazz 4",
+      "description": "Un vinyle rare supplémentaire de jazz.",
+      "value": "250.00",
+      "quantity": 4,
+      "date": "2023-06-04",
+      "collection": 3
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 15,
+    "fields": {
+      "title": "Vinyle de jazz 5",
+      "description": "Un dernier vinyle rare de jazz.",
+      "value": "300.00",
+      "quantity": 5,
+      "date": "2023-06-05",
+      "collection": 3
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 16,
+    "fields": {
+      "title": "Œuvre d'art moderne 1",
+      "description": "Une œuvre d'art moderne.",
+      "value": "1000.00",
+      "quantity": 1,
+      "date": "2023-06-01",
+      "collection": 4
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 17,
+    "fields": {
+      "title": "Œuvre d'art moderne 2",
+      "description": "Une autre œuvre d'art moderne.",
+      "value": "2000.00",
+      "quantity": 1,
+      "date": "2023-06-02",
+      "collection": 4
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 18,
+    "fields": {
+      "title": "Œuvre d'art moderne 3",
+      "description": "Encore une œuvre d'art moderne.",
+      "value": "3000.00",
+      "quantity": 1,
+      "date": "2023-06-03",
+      "collection": 4
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 19,
+    "fields": {
+      "title": "Œuvre d'art moderne 4",
+      "description": "Une œuvre d'art moderne supplémentaire.",
+      "value": "4000.00",
+      "quantity": 1,
+      "date": "2023-06-04",
+      "collection": 4
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 20,
+    "fields": {
+      "title": "Œuvre d'art moderne 5",
+      "description": "Une dernière œuvre d'art moderne.",
+      "value": "5000.00",
+      "quantity": 1,
+      "date": "2023-06-05",
+      "collection": 4
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 21,
+    "fields": {
+      "title": "Carte postale ancienne 1",
+      "description": "Une carte postale ancienne.",
+      "value": "5.00",
+      "quantity": 10,
+      "date": "2023-06-01",
+      "collection": 5
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 22,
+    "fields": {
+      "title": "Carte postale ancienne 2",
+      "description": "Une autre carte postale ancienne.",
+      "value": "6.00",
+      "quantity": 9,
+      "date": "2023-06-02",
+      "collection": 5
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 23,
+    "fields": {
+      "title": "Carte postale ancienne 3",
+      "description": "Encore une carte postale ancienne.",
+      "value": "7.00",
+      "quantity": 8,
+      "date": "2023-06-03",
+      "collection": 5
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 24,
+    "fields": {
+      "title": "Carte postale ancienne 4",
+      "description": "Une carte postale ancienne supplémentaire.",
+      "value": "8.00",
+      "quantity": 7,
+      "date": "2023-06-04",
+      "collection": 5
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 25,
+    "fields": {
+      "title": "Carte postale ancienne 5",
+      "description": "Une dernière carte postale ancienne.",
+      "value": "9.00",
+      "quantity": 6,
+      "date": "2023-06-05",
+      "collection": 5
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 26,
+    "fields": {
+      "title": "Monnaie ancienne 1",
+      "description": "Une monnaie ancienne.",
+      "value": "100.00",
+      "quantity": 1,
+      "date": "2023-06-01",
+      "collection": 6
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 27,
+    "fields": {
+      "title": "Monnaie ancienne 2",
+      "description": "Une autre monnaie ancienne.",
+      "value": "200.00",
+      "quantity": 1,
+      "date": "2023-06-02",
+      "collection": 6
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 28,
+    "fields": {
+      "title": "Monnaie ancienne 3",
+      "description": "Encore une monnaie ancienne.",
+      "value": "300.00",
+      "quantity": 1,
+      "date": "2023-06-03",
+      "collection": 6
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 29,
+    "fields": {
+      "title": "Monnaie ancienne 4",
+      "description": "Une monnaie ancienne supplémentaire.",
+      "value": "400.00",
+      "quantity": 1,
+      "date": "2023-06-04",
+      "collection": 6
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 30,
+    "fields": {
+      "title": "Monnaie ancienne 5",
+      "description": "Une dernière monnaie ancienne.",
+      "value": "500.00",
+      "quantity": 1,
+      "date": "2023-06-05",
+      "collection": 6
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 31,
+    "fields": {
+      "title": "Photographie vintage 1",
+      "description": "Une photographie vintage.",
+      "value": "50.00",
+      "quantity": 1,
+      "date": "2023-06-01",
+      "collection": 7
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 32,
+    "fields": {
+      "title": "Photographie vintage 2",
+      "description": "Une autre photographie vintage.",
+      "value": "60.00",
+      "quantity": 1,
+      "date": "2023-06-02",
+      "collection": 7
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 33,
+    "fields": {
+      "title": "Photographie vintage 3",
+      "description": "Encore une photographie vintage.",
+      "value": "70.00",
+      "quantity": 1,
+      "date": "2023-06-03",
+      "collection": 7
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 34,
+    "fields": {
+      "title": "Photographie vintage 4",
+      "description": "Une photographie vintage supplémentaire.",
+      "value": "80.00",
+      "quantity": 1,
+      "date": "2023-06-04",
+      "collection": 7
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 35,
+    "fields": {
+      "title": "Photographie vintage 5",
+      "description": "Une dernière photographie vintage.",
+      "value": "90.00",
+      "quantity": 1,
+      "date": "2023-06-05",
+      "collection": 7
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 36,
+    "fields": {
+      "title": "Affiche de cinéma 1",
+      "description": "Une affiche de cinéma.",
+      "value": "15.00",
+      "quantity": 1,
+      "date": "2023-06-01",
+      "collection": 8
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 37,
+    "fields": {
+      "title": "Affiche de cinéma 2",
+      "description": "Une autre affiche de cinéma.",
+      "value": "20.00",
+      "quantity": 1,
+      "date": "2023-06-02",
+      "collection": 8
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 38,
+    "fields": {
+      "title": "Affiche de cinéma 3",
+      "description": "Encore une affiche de cinéma.",
+      "value": "25.00",
+      "quantity": 1,
+      "date": "2023-06-03",
+      "collection": 8
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 39,
+    "fields": {
+      "title": "Affiche de cinéma 4",
+      "description": "Une affiche de cinéma supplémentaire.",
+      "value": "30.00",
+      "quantity": 1,
+      "date": "2023-06-04",
+      "collection": 8
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 40,
+    "fields": {
+      "title": "Affiche de cinéma 5",
+      "description": "Une dernière affiche de cinéma.",
+      "value": "35.00",
+      "quantity": 1,
+      "date": "2023-06-05",
+      "collection": 8
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 41,
+    "fields": {
+      "title": "Livre d’art japonais 1",
+      "description": "Un livre d’art japonais.",
+      "value": "100.00",
+      "quantity": 1,
+      "date": "2023-06-01",
+      "collection": 9
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 42,
+    "fields": {
+      "title": "Livre d’art japonais 2",
+      "description": "Un autre livre d’art japonais.",
+      "value": "200.00",
+      "quantity": 1,
+      "date": "2023-06-02",
+      "collection": 9
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 43,
+    "fields": {
+      "title": "Livre d’art japonais 3",
+      "description": "Encore un livre d’art japonais.",
+      "value": "300.00",
+      "quantity": 1,
+      "date": "2023-06-03",
+      "collection": 9
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 44,
+    "fields": {
+      "title": "Livre d’art japonais 4",
+      "description": "Un livre d’art japonais supplémentaire.",
+      "value": "400.00",
+      "quantity": 1,
+      "date": "2023-06-04",
+      "collection": 9
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 45,
+    "fields": {
+      "title": "Livre d’art japonais 5",
+      "description": "Un dernier livre d’art japonais.",
+      "value": "500.00",
+      "quantity": 1,
+      "date": "2023-06-05",
+      "collection": 9
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 46,
+    "fields": {
+      "title": "Sculpture en bois 1",
+      "description": "Une sculpture en bois.",
+      "value": "50.00",
+      "quantity": 1,
+      "date": "2023-06-01",
+      "collection": 10
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 47,
+    "fields": {
+      "title": "Sculpture en bois 2",
+      "description": "Une autre sculpture en bois.",
+      "value": "100.00",
+      "quantity": 1,
+      "date": "2023-06-02",
+      "collection": 10
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 48,
+    "fields": {
+      "title": "Sculpture en bois 3",
+      "description": "Encore une sculpture en bois.",
+      "value": "150.00",
+      "quantity": 1,
+      "date": "2023-06-03",
+      "collection": 10
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 49,
+    "fields": {
+      "title": "Sculpture en bois 4",
+      "description": "Une sculpture en bois supplémentaire.",
+      "value": "200.00",
+      "quantity": 1,
+      "date": "2023-06-04",
+      "collection": 10
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 50,
+    "fields": {
+      "title": "Sculpture en bois 5",
+      "description": "Une dernière sculpture en bois.",
+      "value": "250.00",
+      "quantity": 1,
+      "date": "2023-06-05",
+      "collection": 10
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 51,
+    "fields": {
+      "title": "Montre vintage 1",
+      "description": "Une montre vintage.",
+      "value": "500.00",
+      "quantity": 1,
+      "date": "2023-06-01",
+      "collection": 11
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 52,
+    "fields": {
+      "title": "Montre vintage 2",
+      "description": "Une autre montre vintage.",
+      "value": "600.00",
+      "quantity": 1,
+      "date": "2023-06-02",
+      "collection": 11
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 53,
+    "fields": {
+      "title": "Montre vintage 3",
+      "description": "Encore une montre vintage.",
+      "value": "700.00",
+      "quantity": 1,
+      "date": "2023-06-03",
+      "collection": 11
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 54,
+    "fields": {
+      "title": "Montre vintage 4",
+      "description": "Une montre vintage supplémentaire.",
+      "value": "800.00",
+      "quantity": 1,
+      "date": "2023-06-04",
+      "collection": 11
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 55,
+    "fields": {
+      "title": "Montre vintage 5",
+      "description": "Une dernière montre vintage.",
+      "value": "900.00",
+      "quantity": 1,
+      "date": "2023-06-05",
+      "collection": 11
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 56,
+    "fields": {
+      "title": "Coquillage rare 1",
+      "description": "Un coquillage rare.",
+      "value": "20.00",
+      "quantity": 1,
+      "date": "2023-06-01",
+      "collection": 12
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 57,
+    "fields": {
+      "title": "Coquillage rare 2",
+      "description": "Un autre coquillage rare.",
+      "value": "25.00",
+      "quantity": 1,
+      "date": "2023-06-02",
+      "collection": 12
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 58,
+    "fields": {
+      "title": "Coquillage rare 3",
+      "description": "Encore un coquillage rare.",
+      "value": "30.00",
+      "quantity": 1,
+      "date": "2023-06-03",
+      "collection": 12
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 59,
+    "fields": {
+      "title": "Coquillage rare 4",
+      "description": "Un coquillage rare supplémentaire.",
+      "value": "35.00",
+      "quantity": 1,
+      "date": "2023-06-04",
+      "collection": 12
+    }
+  },
+  {
+    "model": "collec_management.element",
+    "pk": 60,
+    "fields": {
+      "title": "Coquillage rare 5",
+      "description": "Un dernier coquillage rare.",
+      "value": "40.00",
+      "quantity": 1,
+      "date": "2023-06-05",
+      "collection": 12
+    }
+  }
+]
